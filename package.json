@@ -1,0 +1,24 @@
+{
+  "name": "@eliranmal/react-hooks",
+  "version": "0.1.0",
+  "description": "a bunch of react hooks",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliranmal/react-hooks.git"
+  },
+  "keywords": [
+    "react hooks",
+    "react library",
+    "react"
+  ],
+  "author": "Eliran Malka",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/eliranmal/react-hooks/issues"
+  },
+  "homepage": "https://github.com/eliranmal/react-hooks#readme"
+}
