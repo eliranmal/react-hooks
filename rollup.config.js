@@ -5,6 +5,9 @@ export default {
   input: 'src/index.js',
   output: {
     file: packageMain,
+    format: 'cjs',
+    exports: 'named',
+    sourcemap: true,
   },
   plugins: [terser()],
 }
