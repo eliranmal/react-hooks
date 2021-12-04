@@ -1,4 +1,2 @@
 
-const wat = () => 'wat'
-
-export {wat}
+export {useAnimationFrame} from './hooks/useAnimationFrame'
