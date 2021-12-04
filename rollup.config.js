@@ -10,4 +10,5 @@ export default {
     sourcemap: true,
   },
   plugins: [terser()],
+  external: ['react', 'react-dom'],
 }
