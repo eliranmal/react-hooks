@@ -8,10 +8,11 @@ export const useAnimationFrame = (
   useEffect(() => {
     let reqId
     const tick = () => {
-      tickCallback()
-      if (!stopPredicate()) {
-        reqId = window.requestAnimationFrame(tick)
+      if (stopPredicate()) {
+        return
       }
+      tickCallback()
+      reqId = window.requestAnimationFrame(tick)
     }
     reqId = window.requestAnimationFrame(tick)
     return () => {
