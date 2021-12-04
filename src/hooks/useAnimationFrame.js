@@ -3,19 +3,19 @@ import {useEffect} from 'react'
 
 export const useAnimationFrame = (
   tickCallback = () => {},
-  stopPredicate = () => 1,
-  dependencies
+  stopPredicate = () => 1
 ) => {
   useEffect(() => {
-    let reqId = window.requestAnimationFrame(function step() {
+    let reqId
+    const tick = () => {
       tickCallback()
       if (!stopPredicate()) {
-        reqId = window.requestAnimationFrame(step)
+        reqId = window.requestAnimationFrame(tick)
       }
-    })
+    }
+    reqId = window.requestAnimationFrame(tick)
     return () => {
       window.cancelAnimationFrame(reqId)
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, dependencies)
+  })
 }
