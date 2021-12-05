@@ -1,6 +1,6 @@
 {
   "name": "@eliranmal/react-hooks",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "a bunch of react hooks",
   "main": "dist/index.js",
   "scripts": {
