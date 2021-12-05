@@ -8,6 +8,7 @@
     "build": "rollup -c",
     "build:watch": "rollup -c -w",
     "test": "jest",
+    "prerelease": "npm run build",
     "release": "bash bin/release.sh",
     "patch": "npm version patch && npm run release",
     "minor": "npm version minor && npm run release",
