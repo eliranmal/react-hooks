@@ -23,5 +23,5 @@ export const useMediaQueries = (
 
     return () => mediaQueries
       .forEach(([query, listener]) => query.removeEventListener('change', listener))
-  }, [listenerByQueryMap])
+  }, [listenerByQueryMap, queryListenerDecorator])
 }
