@@ -1,3 +1,4 @@
 
-export {useMediaQueries} from './hooks/useMediaQueries'
-export {useAnimationFrame} from './hooks/useAnimationFrame'
+export * from './hooks/useKeyboard'
+export * from './hooks/useMediaQueries'
+export * from './hooks/useAnimationFrame'
